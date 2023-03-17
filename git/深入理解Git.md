@@ -1,3 +1,9 @@
+## 概述
+
+![[framework.png]]
+![[fetch.png]]
+## 原理
+
 [Git原理浅析](https://juejin.cn/post/7106353721298124808)
 
 我们的项目一般由文件夹和文件组成，在git的术语中，文件夹称为 **“tree”** ，文件称为 **“blob”** ，顶层文件夹称为 **“top-level tree”** 。
