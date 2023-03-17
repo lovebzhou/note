@@ -39,6 +39,7 @@ xcrun simctl help [subcommand]
 - install: Install an app on a device.
 
 ### list
+List available devices, device types, runtimes, or device pairs.
 ```Shell
 # 列出iOS版本为16.2的模拟设备
 xcrun simctl list devices "16.2"
@@ -55,25 +56,23 @@ xcrun simctl list devices available
 ```
 
 ### boot
+Boot a device or device pair.
 ```Shell
-# 启动iPhone 14 Plus模拟设备
 xcrun simctl boot 17820D5F-D185-4AF8-92E3-205FBFE709A7
 ```
 
 ### launch
-
+Launch an application by identifier on a device.
 ```Shell
-# 在iPhone 14中启动伙伴云
 xcrun simctl launch 3B2E17FA-0C3C-4F84-8886-B8447498DE40 com.huoban.cloudgrid
 ```
 
 ### push
-
+Send a simulated push notification
 ```Shell
-
-xcrun simctl push 3B2E17FA-0C3C-4F84-8886-B8447498DE40 com.huoban.cloudgrid noti
+xcrun simctl push 3B2E17FA-0C3C-4F84-8886-B8447498DE40 com.huoban.cloudgrid payload.json
 ```
-notification.json
+payload.json
 ```JSON
 {
     "aps" : {
