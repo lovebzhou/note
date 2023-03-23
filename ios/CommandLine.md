@@ -102,3 +102,9 @@ build Xcode projects and workspaces
 ```
 xcodebuild -workspace ./ios/HuobanRN.xcworkspace -configuration Debug -scheme HuobanRN -destination id=3B2E17FA-0C3C-4F84-8886-B8447498DE40
 ```
+
+## security
+
+```Shell
+security cms -D -i embedded.mobileprovision > result.plist open result.plist
+```

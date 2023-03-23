@@ -1,16 +1,17 @@
-## 概述
+## 1. 概述
 
+
+## 2. 开发环境
 
 ### Apple Developer
-
+注册开发者账号，创建真机运行、打包、发布的证书。
 https://developer.apple.com
 
-### 环境
-#### XCode
-
+### XCode
 https://developer.apple.com/xcode/
 
-#### CocoaPods
+### CocoaPods
+依赖包管理工具。
 
 https://cocoapods.org/
 
@@ -28,13 +29,21 @@ pod install
 open App.xcworkspace
 ```
 
-### 开发
-
-### 测试
-
-### 发布
+## 构建 & 运行
 
 #### Fastlane
+
+```Shell
+# 安装开发证书
+fastlane match develop
+
+```
+
+### 分发
+
+- [Find the best way to reach your users.](https://developer.apple.com/business/distribute/)
+- [Distributing Custom Apps](https://developer.apple.com/custom-apps/)
+
 
 #### XCode Cloud
 

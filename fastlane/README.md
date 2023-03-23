@@ -1,6 +1,6 @@
 https://fastlane.tools/
 
-### 1. 安装Fastlane
+## 1. 安装
 
 #### Ruby
 
@@ -32,7 +32,8 @@ brew install fastlane
 sudo gem install fastlane
 ```
 
-### 2. 设置Fastlane
+## 2. 配置
+
 进入App目录，运行如下命令：
 ```Shell
 fastlane init
@@ -51,11 +52,11 @@ fastlane 会自动检测你的项目，并询问任何缺失的信息。
 - Learn more about how to setup code signing with fastlane
 	https://docs.fastlane.tools/codesigning/getting-started/
 
-#### 2.1. iOS
+### 2.2. 插件
 
+#### 蒲公英
+
+[使用 Fastlane 上传 App 到蒲公英](https://www.pgyer.com/doc/view/fastlane)
 ```Shell
-# Xcode command line tools (macOS)
-xcode-select --install
-
+fastlane add_plugin pgyer
 ```
-
