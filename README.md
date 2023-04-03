@@ -1,5 +1,5 @@
 # lovebzhou的知识库
 
 ## iOS
-[CommandLine](ios/CommandLine.md)
+[Xcode_Comand_Line](Xcode_Comand_Line.md)
 
