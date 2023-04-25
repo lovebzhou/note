@@ -52,7 +52,7 @@ npm run start:debug
 
 ```json
 "scripts": {
-	"start:debug:vscode": "node --inspect-brk scripts/start.js",
+	"start:debug:vscode": "node --inspect-brk=8229 scripts/start.js",
 },
 ```
 
