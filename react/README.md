@@ -1,3 +1,39 @@
+# React学习笔记
+
+## 1. 概述
+
+## 2. 开发环境
+
+### 新建
+
+#### create-react-app
+```sh
+npx create-react-app my-app
+
+cd my-app
+
+# 安装依赖
+npm install
+
+# 启动
+npm start
+```
+#### Vite
+```sh
+# 新建
+npm create vite@latest hello -- --template react
+# 新建：根据提示输入参数
+npm create vite@latest
+
+cd hello
+
+# 安装依赖
+npm install
+
+# 启动
+npm run dev
+```
+
 ## 参考资料
 
 ### 状态管理
