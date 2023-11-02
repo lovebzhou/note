@@ -7,6 +7,7 @@ https://www.docker.com/
 
 - [Nest.js 的微服务，写起来也太简单了吧！](https://juejin.cn/post/7207637337571901495)
 - [一文学会用 Docker 和 Docker Compose 部署 Node.js 微服务](https://juejin.cn/post/7208384641190723644)
+- [掌握这 5 个技巧，让你的 Dockerfile 像个大师！](https://juejin.cn/post/7248145094600900669)
 
 
 
@@ -64,25 +65,7 @@ docker build -t my-app-image .
 docker run -it -p 80:80 my-app-image
 ```
 
-## 常用命令
-```bash
-# 拉取镜像
-docker pull consul
-
-# 构建镜像
-docker build -t image-name my-app-path
-
-# 查看Container IDs
-docker ps
-
-# 停止容器
-docker stop <container_id>
-
-# 进入容器Shell
-docker exec -it <container_id> /bin/sh
-```
-
-## 3.  React前端Docker
+## React前端Docker
 
 ### 安装配置nginx镜像
 

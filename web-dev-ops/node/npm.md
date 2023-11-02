@@ -2,6 +2,8 @@
 
 - https://www.npmjs.com/
 - https://www.npmjs.cn/
+- [跑 npm scripts，其实有更香的方式](https://juejin.cn/post/7148816702917050399)
+- [创建npm package最佳实践](https://snyk.io/blog/best-practices-create-modern-npm-package/)
 
 npm 由三个独立的部分组成：
 - 网站
@@ -24,6 +26,8 @@ npm install npm@latest -g
 
 # install a version that will be released in the future
 npm install npm@next -g
+
+npm --registry http://npm.huoban.com install @huoban/hbeditor
 ```
 
 ## 3. 常用命令
@@ -43,7 +47,7 @@ npm update
 
 ### 包管理
 
-```
+```sh
 # =>>> 安装包
 npm install react
 
@@ -79,6 +83,8 @@ npm repo react
 # 搜索
 npm search react
 
+# 列出版本依赖
+npm ls --all
 ```
 
 ### 执行脚本
@@ -118,6 +124,10 @@ open 'https://npmjs.com/~username'
 ```
 # ...
 npm init
+```
+### 测试
+```sh
+npm link
 ```
 
 ### 发布Package

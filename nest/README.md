@@ -1,5 +1,6 @@
 ## 概述
-https://nestjs.com/
+- https://nestjs.com/
+- https://docs.nestjs.cn/
 - [Nest.js 的微服务，写起来也太简单了吧！](https://juejin.cn/post/7207637337571901495)
 - [一文学会用 Docker 和 Docker Compose 部署 Node.js 微服务](https://juejin.cn/post/7208384641190723644)
 

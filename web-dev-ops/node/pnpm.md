@@ -69,3 +69,23 @@ pnpm
 ```sh
 pnpm install
 ```
+### 调试本地package
+
+
+```sh
+# 安装package到本地
+pnpm link --global
+
+# 使用方：链接本地package
+pnpm link --global your-loader
+
+```
+
+
+## 特性 Features
+
+### 工作区 Workspace
+
+pnpm 内置了对单一存储库（也称为多包存储库、多项目存储库或单体存储库）的支持， 你可以创建一个 workspace 以将多个项目合并到一个仓库中。
+
+一个 workspace 的根目录下必须有 [`pnpm-workspace.yaml`](https://pnpm.io/zh/pnpm-workspace_yaml) 文件， 也可能会有 [`.npmrc`](https://pnpm.io/zh/npmrc) 文件。

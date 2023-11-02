@@ -1,6 +1,7 @@
 
 ## 概述
-https://go.dev/
+- https://go.dev/
+- https://go-zh.org/
 
 ## 入门指引
 
@@ -20,6 +21,10 @@ export GOBIN=$GOPATH/bin
 export PATH="$GOBIN:$PATH"
 ```
 
+### 本地安装Tour源码
+```sh
+
+```
 ### Hello
 
 1. 创建项目

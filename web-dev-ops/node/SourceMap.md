@@ -1,0 +1,3 @@
+- [JavaScript Source Map 详解](https://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html)
+- [`sourcemap` 的原理和作用](https://juejin.cn/book/7070324244772716556/section/7136845310206148616)
+- [`base64vlq`](https://www.murzwin.com/base64vlq.html)

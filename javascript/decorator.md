@@ -1,0 +1,2 @@
+- https://wangdoc.com/es6/decorator
+- https://zh.javascript.info/call-apply-decorators

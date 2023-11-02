@@ -6,6 +6,12 @@
 - https://www.webpackjs.com/
 - https://astexplorer.net/
 - [minipack](https://github.com/ronami/minipack)
+- [webpack，Babel，babel-loader的关系](https://juejin.cn/post/6844904098303574023)
+- [Webpack 深入浅出之公司级分享总结](https://juejin.cn/post/6844904022567043080)
+- [干货！撸一个webpack插件(内含tapable详解+webpack流程)](https://juejin.cn/post/6844903713312604173)
+- [webpack原理](https://juejin.cn/post/6844903838420303886)
+- [探究前端项目打包构建的用户故事](https://juejin.cn/post/7216153056282411045)
+
 
 
 ## 2. 开发环境
@@ -57,6 +63,7 @@ npm run start:debug
 ```
 
 ##### 添加调试配置
+https://code.visualstudio.com/docs/editor/debugging
 ```json
 {
 	// 使用 IntelliSense 了解相关属性。
@@ -82,7 +89,42 @@ npm run start:debug
 - 在`scripts/start.js`中点击断点
 - 点击`debug-webpack`启动调试
 
+## 配置
+
+### 多入口
+
+```js
+module.exports = {
+	entry: {
+		main: './src/main.js',
+		login: './src/Login.js',
+	},
+	output: {
+		path: path.resolve(__dirname, 'dist'),
+		//filename: '[name].js',
+		filename: '[name].[contenthash].js',
+	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'public', 'index.html'),
+			filename: './index.html',
+			chunks: ['main'],
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'public', 'index.html'),
+			filename: './login.html',
+			chunks: ['login'],
+		}),
+	]
+}
+```
+
 ## 代码分离- Code Splitting
+
+- [指南-代码分离](https://www.webpackjs.com/guides/code-splitting/)
+- [SplitChunksPlugin](https://www.webpackjs.com/plugins/split-chunks-plugin/)
+- [webpack分包](https://juejin.cn/post/7142797454490992653)
+
 
 ## Tree Shaking
 

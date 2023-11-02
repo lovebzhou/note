@@ -2,13 +2,16 @@
 
 ## 1. 概述
 
-## 2. 开发环境
+## 2. Start
 
-### 新建
+### 2.1. 新建
 
 #### create-react-app
 ```sh
+# js
 npx create-react-app my-app
+# ts
+npx create-react-app my-app --template typescript
 
 cd my-app
 
@@ -17,7 +20,13 @@ npm install
 
 # 启动
 npm start
+
 ```
+
+[参考](https://create-react-app.dev/docs/getting-started)
+
+
+
 #### Vite
 ```sh
 # 新建
